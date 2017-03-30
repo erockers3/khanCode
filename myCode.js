@@ -380,8 +380,5 @@ noStroke();
 background(255, 255, 255);
 makeBlackMage(150, 100, 10, true, false);
 
-makeBlackMage(150, 100, 10, false, false);
-
-
 
 		}};
