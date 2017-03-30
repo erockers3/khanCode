@@ -1,4 +1,15 @@
+		var sketchProc=function(processingInstance){ with (processingInstance){
 
+size(400, 400); 
+frameRate(30);
+
+
+// feel free to copy and paste any of my work, just remember to give me credit.
+var left = 0;
+var top = 0;
+var bs = 10;
+var flipx = false;
+var flipy = false;
 
 var makePixel = function (x, y) {
 
@@ -17,7 +28,6 @@ var makePixel = function (x, y) {
     rect(left + (bs * x * xchange), top + (bs * y * ychange), bs, bs);
 
 };
-
 var makeBlackMage = function (x, y, size, xFlip, yFlip) {
 
     left = x;
@@ -366,17 +376,12 @@ makePixel(-2,19);
 
 };
 
-
-function go(){
-
-    // feel free to copy and paste any of my work, just remember to give me credit.
-    var left = 0;
-    var top = 0;
-    var bs = 10;
-    var flipx = false;
-    var flipy = false;
 noStroke();
 background(255, 255, 255);
 makeBlackMage(150, 100, 10, true, false);
 
-}
+makeBlackMage(150, 100, 10, false, false);
+
+
+
+		}};
